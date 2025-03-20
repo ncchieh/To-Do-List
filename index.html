@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <div id="year-selector">
+            <button id="year-button">2025 <span id="year-arrow">&#9660;</span></button>
+        </div>
+
+        <div id="todo-lists">
+
+        </div>
+
+        <button id="add-task-button">+</button>
+
+        <div id="date-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Select Date</h2>
+                <input type="date" id="new-list-date">
+                <input type="color" id="new-list-color" value="#ffff99">
+                <button id="create-list-button">OK</button>
+            </div>
+        </div>
+
+        <div id="add-task-model" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Add New Task</h2>
+                <input type="text" id="new-task-text" placeholder="Enter task description">
+                <button id="add-task-button">Add Task</button>
+            </div>
+        </div>
+
+        <div class="backup-restore">
+            <button id="export-button">Export Data</button>
+            <button id="import-button">Import Data</button>
+            <textarea id="backup-data" placeholder="Paste backup data here..."></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
